@@ -1,11 +1,56 @@
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import funny from "../../assets/funny.png";
+import flower from "../../assets/flower.png";
+import leaf from "../../assets/leaf.png";
 import "./section2.css";
+
+let a = 0;
 
 const Section2 = () => {
     const ref = useRef(null)
     const isInView = useInView(ref);
+
+    const ref2 = useRef(null)
+    let isInView2 = useInView(ref2);
+
+    if (isInView2) {
+        const element = document.getElementById("horizontalScroll");
+        let scrollFunction = (e) => {
+            const deltaX = e.deltaX;
+            const deltaY = e.deltaY;
+            const isTouchpadScrolling = Math.abs(deltaX) < 10 && Math.abs(deltaY) < 10;
+
+            if (deltaY > 0) {
+                if (isTouchpadScrolling) {
+                    element.scrollTo(a, 0);
+                    a += 1
+                    if ((element.offsetWidth - 100) < a) {
+                        document.getElementById("section3").classList.remove("d-none");
+                        e.preventDefault();
+                    }
+                } else {
+                    element.scrollTo(a, 0);
+                    a += 50
+                    if ((element.offsetWidth - 100) < a) {
+                        document.getElementById("section3").classList.remove("d-none");
+                        e.preventDefault();
+                    }
+                }
+            }
+
+
+        }
+        window.addEventListener("wheel", (e) => {
+            scrollFunction(e);
+
+            if ((element.offsetWidth - 100) < a) {
+                e.preventDefault();
+            }
+        });
+    }
+
+
     return (
         <div>
             <div className='mt-5 d-flex' ref={ref}>
@@ -19,7 +64,7 @@ const Section2 = () => {
                     animate={isInView && { width: 80, height: 80, x: 0, y: 0, rotate: '0deg', transition: { duration: 1 } }}
                     src={funny} />
             </div>
-            <div className='d-flex flex-row align-items-center familiar-images-container'>
+            <div id='horizontalScroll' className='d-flex flex-row align-items-center familiar-images-container'>
 
                 <div className='familar-cards card-1 me-4'>
                     <h5>You argue with a colleague</h5>
@@ -30,7 +75,7 @@ const Section2 = () => {
                     <p>You get angry and defective instead of staying open and working towards common ground.</p>
                 </div>
                 <motion.div
-                    initial={{ rotate: '-30deg' }}
+                    initial={{ rotate: '0deg' }}
                     animate={isInView && { rotate: '-5deg' }}
                     className='familar-cards card-3 me-4'>
                     <h5>You argue with a colleague</h5>
@@ -48,6 +93,16 @@ const Section2 = () => {
                     <h5>You hit dead end in a negotiation</h5>
                     <p>You get nervous, frazzled and frustrated, instead of staying optimistic and solution-oriented.</p>
                 </div>
+            </div>
+            <div ref={ref2} className='d-flex justify-content-end flower'>
+                <motion.img
+                    initial={{ width: 75, height: 75 }}
+                    animate={{ width: 75, height: 75, rotate: "360deg", transition: { duration: 30, repeat: Infinity, repeatType: "loop", delay: 0 } }}
+                    src={flower} />
+                <motion.img
+                    initial={{ x: -120, y: 20, width: 60, height: 60 }}
+                    animate={{ x: -120, y: 20, width: 60, height: 60, rotate: "360deg", transition: { duration: 30, repeat: Infinity, repeatType: "loop", delay: 0 } }}
+                    src={leaf} />
             </div>
         </div>
 

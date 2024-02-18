@@ -48,3 +48,7 @@
 .card-6 {
     background-color: rgb(216, 206, 236);
 }
+
+.flower {
+    overflow: hidden;
+}

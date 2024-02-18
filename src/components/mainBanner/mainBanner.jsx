@@ -78,7 +78,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: -15, y: 40, rotate: '180deg' }}
                         animate={{ x: -15, y: 40, rotate: '0deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 100, height: 100, transition: { duration: 2 } }}
                             src={smile} alt="" />
@@ -87,7 +87,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: 335, y: 110, rotate: '180deg' }}
                         animate={{ x: 335, y: 110, rotate: '0deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 100, height: 100, transition: { duration: 2 } }}
                             src={funny} alt="" />
@@ -96,7 +96,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: 100, y: 340, rotate: '180deg' }}
                         animate={{ x: 100, y: 340, rotate: '0deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 100, height: 100, transition: { duration: 2 } }}
                             src={angry} alt="" />
@@ -105,7 +105,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: -25, y: 250, }}
                         animate={{ x: -25, y: 250, rotate: '-180deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 40, height: 40, transition: { duration: 5 } }}
                             src={angry} alt="" />
@@ -114,7 +114,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: 280, y: -10, }}
                         animate={{ x: 280, y: -10, rotate: '-180deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 40, height: 40, transition: { duration: 5 } }}
                             src={smile} alt="" />
@@ -123,7 +123,7 @@ const MainBanner = () => {
                     <motion.div className="element"
                         initial={{ x: 320, y: 340 }}
                         animate={{ x: 320, y: 340, rotate: '-180deg', transition: { type: "spring", stiffness: 5, damping: 1, } }}>
-                        <motion.img
+                        <motion.img className="ghost-img"
                             initial={{ width: 0, height: 0 }}
                             animate={{ width: 40, height: 40, transition: { duration: 5 } }}
                             src={funny} alt="" />

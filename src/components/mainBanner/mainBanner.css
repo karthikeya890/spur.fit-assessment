@@ -36,7 +36,7 @@
 }
 
 
-img {
+.ghost-img {
     filter: drop-shadow(5px 5px 5px #0e0f0f);
 }
 
