@@ -1,0 +1,50 @@
+.section2-heading {
+    font-weight: bold
+}
+
+.familiar-images-container {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    height: 300px;
+}
+
+.familar-cards {
+    height: 150px;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.familar-cards h5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.familar-cards p {
+    font-size: 12px;
+}
+
+.card-1 {
+    background-color: rgb(186, 241, 245);
+}
+
+.card-2 {
+    background-color: rgb(243, 240, 241);
+}
+
+.card-3 {
+    background-color: rgb(194, 141, 239);
+}
+
+.card-4 {
+    background-color: rgba(102, 98, 98, 0.852);
+}
+
+.card-5 {
+    background-color: rgb(255, 221, 232);
+}
+
+.card-6 {
+    background-color: rgb(216, 206, 236);
+}

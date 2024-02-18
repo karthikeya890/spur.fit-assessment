@@ -1,0 +1,10 @@
+.eq-beats-iq h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.eq-beats-iq p {
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+    padding: 0px 40px;
+}
