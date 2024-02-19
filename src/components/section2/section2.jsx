@@ -24,7 +24,7 @@ const Section2 = () => {
             if (deltaY > 0) {
                 if (isTouchpadScrolling) {
                     element.scrollTo(a, 0);
-                    a += 1
+                    a += 0.5
                     if ((element.offsetWidth - 100) < a) {
                         document.querySelectorAll(".hideSections1").forEach(ele => {
                             ele.classList.remove("d-none")
@@ -32,7 +32,7 @@ const Section2 = () => {
                     }
                 } else {
                     element.scrollTo(a, 0);
-                    a += 50
+                    a += 30
                     if ((element.offsetWidth - 100) < a) {
                         document.querySelectorAll(".hideSections1").forEach(ele => {
                             ele.classList.remove("d-none")

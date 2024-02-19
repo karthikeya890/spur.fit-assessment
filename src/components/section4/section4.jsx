@@ -86,6 +86,22 @@ const Section4 = () => {
                             <div className='line'></div>
                         </div>
                         <div>
+                            <h4>It's not as easy as 1-2-3</h4>
+                            <p>
+                                The jounery of chnage may be long, but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div style={{ minHeight: '150px' }} className='d-flex'>
+                        <div style={{ minWidth: '60px' }} className='d-flex flex-column align-items-center'>
+                            <motion.div
+                                animate={{ width: '20px', height: "20px", borderRadius: '10px' }}
+                                className='round'></motion.div>
+                            <div className='line'></div>
+                        </div>
+                        <div>
                             <h4>Old habits are hard to break.</h4>
                             <p>And bad behaviours die hard. Fortunately, we give you great,
                                 science-backed techniques to use.
@@ -109,6 +125,7 @@ const Section4 = () => {
                         </div>
 
                     </div>
+
                     <div style={{ minHeight: '150px' }} className='d-flex'>
                         <div style={{ minWidth: '60px' }} className='d-flex flex-column align-items-center'>
                             <motion.div
@@ -116,10 +133,10 @@ const Section4 = () => {
                                 className='round'></motion.div>
                             <div className='line'></div>
                         </div>
-                        <div>
-                            <h4>Old habits are hard to break.</h4>
-                            <p>And bad behaviours die hard. Fortunately, we give you great,
-                                science-backed techniques to use.
+                        <div >
+                            <h4>Books just don't offer practical solutions.</h4>
+                            <p>
+                                Remember when you learned to ride a bike just by reading? Yeash, we don't either. We help you take concrete small steps towards your goals. Learning just a bit, then immediately sprining into action.
                             </p>
                         </div>
 
@@ -132,24 +149,9 @@ const Section4 = () => {
                             <div className='line'></div>
                         </div>
                         <div >
-                            <h4>Old habits are hard to break.</h4>
-                            <p>And bad behaviours die hard. Fortunately, we give you great,
-                                science-backed techniques to use.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div style={{ minHeight: '150px' }} className='d-flex'>
-                        <div style={{ minWidth: '60px' }} className='d-flex flex-column align-items-center'>
-                            <motion.div
-                                animate={{ width: '20px', height: "20px", borderRadius: '10px' }}
-                                className='round'></motion.div>
-                            <div className='line'></div>
-                        </div>
-                        <div >
-                            <h4>Old habits are hard to break.</h4>
-                            <p>And bad behaviours die hard. Fortunately, we give you great,
-                                science-backed techniques to use.
+                            <h4>Inspiration is great, but then what.</h4>
+                            <p>
+                                We make sure your energy from all the content you consume does not fizzle out.
                             </p>
                         </div>
 

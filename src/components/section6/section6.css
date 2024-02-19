@@ -1,0 +1,116 @@
+.section6-container {
+    background-color: rgb(221, 254, 254);
+    border-radius: 30px;
+}
+
+.section6-container p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section6-container h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.sun-img {
+    height: 100px;
+}
+
+.count {
+    position: absolute;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.count-container p {
+    font-size: 17px;
+    font-weight: 500;
+    z-index: 3;
+}
+
+.count-container img {
+    z-index: 2;
+}
+
+.sun-line {
+    width: 60%;
+    border: 0px;
+    opacity: 50%;
+    border-top: 3px solid rgb(239, 193, 30);
+    border-style: dashed;
+    position: absolute;
+    z-index: 1;
+}
+
+.anonymonos-card {
+    height: 200px;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.anonymonos-round {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.anonymonos-line {
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.284);
+    width: 100%;
+}
+
+.round-1 {
+    background-color: blueviolet;
+}
+
+.round-2 {
+    background-color: rgb(43, 195, 226);
+}
+
+.round-3 {
+    background-color: rgb(255, 164, 7);
+}
+
+.round-4 {
+    background-color: rgb(9, 219, 160);
+}
+
+.line-name-1 {
+    background-color: blueviolet;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+}
+
+.line-name-2 {
+    background-color: rgb(43, 195, 226);
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+}
+
+.line-name-3 {
+    background-color: rgb(255, 164, 7);
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+}
+
+.line-name-4 {
+    background-color: rgb(9, 219, 160);
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+}
