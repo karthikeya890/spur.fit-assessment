@@ -1,5 +1,5 @@
-import { motion, useInView, useScroll, useTransform } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { motion, useInView, } from 'framer-motion';
+import { useRef, } from 'react';
 import funny from "../../assets/funny.png";
 import flower from "../../assets/flower.png";
 import leaf from "../../assets/leaf.png";
@@ -26,15 +26,17 @@ const Section2 = () => {
                     element.scrollTo(a, 0);
                     a += 1
                     if ((element.offsetWidth - 100) < a) {
-                        document.getElementById("section3").classList.remove("d-none");
-                        e.preventDefault();
+                        document.querySelectorAll(".hideSections1").forEach(ele => {
+                            ele.classList.remove("d-none")
+                        });
                     }
                 } else {
                     element.scrollTo(a, 0);
                     a += 50
                     if ((element.offsetWidth - 100) < a) {
-                        document.getElementById("section3").classList.remove("d-none");
-                        e.preventDefault();
+                        document.querySelectorAll(".hideSections1").forEach(ele => {
+                            ele.classList.remove("d-none")
+                        });
                     }
                 }
             }
@@ -45,7 +47,6 @@ const Section2 = () => {
             scrollFunction(e);
 
             if ((element.offsetWidth - 100) < a) {
-                e.preventDefault();
             }
         });
     }

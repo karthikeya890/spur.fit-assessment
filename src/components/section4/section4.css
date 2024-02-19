@@ -1,0 +1,20 @@
+.vertical-improvements {
+    width: 700px;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.round {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(166, 33, 244);
+    border-radius: 50%;
+}
+
+.line {
+    height: 100%;
+    background-image: linear-gradient(rgb(166, 33, 244), rgb(234, 227, 237));
+    width: 4px;
+}

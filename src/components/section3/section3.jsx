@@ -11,7 +11,7 @@ const Section3 = () => {
 
 
     return (
-        <div id='section3' className='d-none'>
+        <div className='d-none hideSections1'>
             <div className='mt-5' ref={ref}>
                 <motion.p
                     initial={{ x: -100, y: 100, fontSize: '10px', opacity: 0.1 }}
