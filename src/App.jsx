@@ -11,18 +11,17 @@ import Section5 from "./components/section5/section5";
 import Section6 from './components/section6/section6';
 import Section7 from './components/section7/section7';
 
-let notified = false;
+
 
 export default function Scroll() {
 
   useEffect(() => {
-    if (!notified) {
-      setTimeout(() => {
-        notified = true;
-        toast.error("First of all, I apologize for not completing the assessment properly. I believe I could have performed better with proper guidance and more time allocated for the assessment. And It's not responsive.", { duration: 10000 });
-      }, 4000)
-    }
-  }, [notified])
+
+    setTimeout(() => {
+      toast.error("First of all, I apologize for not completing the assessment properly. I believe I could have performed better with proper guidance and more time allocated for the assessment. And It's not responsive.", { duration: 10000 });
+    }, 3000)
+
+  }, [])
 
 
 
