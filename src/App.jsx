@@ -36,6 +36,7 @@ export default function Scroll() {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Section7 />
       <Toaster position="bottom-left" />
     </div>
   );
